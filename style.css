@@ -113,6 +113,11 @@ header nav ul li a.active {
     color: #bbb;
 }
 
+.hero-section h2 {
+    font-size: 1.5rem;
+    color: #76e3b3;
+}
+
 .neon-button {
     display: inline-block;
     padding: 0.8rem 2rem;
