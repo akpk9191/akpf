@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Penetration Tester Portfolio showcasing skills, tools, and projects.">
+    <title>Penetration Tester Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Your Name",
+        "jobTitle": "Penetration Tester",
+        "url": "https://yourportfolio.com",
+        "sameAs": [
+            "https://linkedin.com/in/yourprofile",
+            "https://github.com/yourprofile"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Cyber<span>Ops</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active" tabindex="0">Home</a></li>
+                <li><a href="#skills" tabindex="0">Skills</a></li>
+                <li><a href="#portfolio" tabindex="0">Portfolio</a></li>
+                <li><a href="#contact" tabindex="0">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="hamburger-menu" aria-label="Menu toggle" tabindex="0">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-text">
+                <h1 data-aos="fade-up">Secure Your World</h1>
+                <p data-aos="fade-up" data-aos-delay="200">
+                    I'm Akshara, a certified penetration tester specializing in uncovering vulnerabilities and strengthening systems. Let’s make your world cyber-safe and build a resilient digital future!
+                </p>
+                <a href="#portfolio" class="neon-button" data-aos="zoom-in" data-aos-delay="400">Explore My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills & Tools</h2>
+            <p class="section-description">
+                A versatile toolset and expertise to tackle modern security challenges.
+            </p>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="flip-left">
+                    <img src="images/nmap.png" alt="Nmap logo" loading="lazy">
+                    <h3>Nmap</h3>
+                    <p>Proficient in network discovery and security auditing.</p>
+                </div>
+                <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
+                    <img src="images/burp.png" alt="Burp Suite logo" loading="lazy">
+                    <h3>Burp Suite</h3>
+                    <p>Comprehensive experience in web vulnerability testing.</p>
+                </div>
+                <div class="skill-card" data-aos="flip-left" data-aos-delay="400">
+                    <img src="images/metasploit.png" alt="Metasploit logo" loading="lazy">
+                    <h3>Metasploit</h3>
+                    <p>Extensive use for penetration testing and exploit development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <p class="section-description">
+                Hands-on projects showcasing expertise in penetration testing.
+            </p>
+            <div class="portfolio-grid">
+                <div class="portfolio-card" data-aos="fade-up">
+                    <img src="images/project1.png" alt="Network Penetration Test Project" loading="lazy">
+                    <h3>Network Penetration Test</h3>
+                    <p>Detailed penetration testing and vulnerability assessments.</p>
+                    <a href="https://github.com/project1" class="neon-button">View Project</a>
+                </div>
+                <div class="portfolio-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/project2.png" alt="Web Application Security Project" loading="lazy">
+                    <h3>Web Application Security</h3>
+                    <p>Performed comprehensive security audits for web applications.</p>
+                    <a href="https://github.com/project2" class="neon-button">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p class="section-description">
+                Reach out for collaboration or consultation.
+            </p>
+            <form action="#" class="contact-form" data-aos="fade-up">
+                <input type="text" name="name" placeholder="Your Name" aria-label="Name" required>
+                <input type="email" name="email" placeholder="Your Email" aria-label="Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" aria-label="Message" required></textarea>
+                <button type="submit" class="neon-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2024 <span>Akshara</span>. All rights reserved.
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+        </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init(); // Initialize animations
+            
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const navMenu = document.querySelector('header nav ul');
+
+            // Add click event to the hamburger menu
+            hamburgerMenu.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
